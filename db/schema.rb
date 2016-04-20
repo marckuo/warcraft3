@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160420162428) do
+ActiveRecord::Schema.define(version: 20160420170447) do
+
+  create_table "match", force: :cascade do |t|
+    t.datetime "created_at"
+    t.string   "address"
+    t.integer  "player_one_id"
+    t.integer  "player_two_id"
+    t.integer  "sport_id"
+  end
 
   create_table "sports", force: :cascade do |t|
     t.string "name"
