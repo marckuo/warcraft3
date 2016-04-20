@@ -1,4 +1,4 @@
-class Match < < ActiveRecord::Migration
+class Match < ActiveRecord::Base
   
   has_many   :reviews
   belongs_to :player_1_user_id
