@@ -1,0 +1,29 @@
+<h1> </br>
+
+<%= @user.first_name %>'s profile page
+</br>
+First Name:
+<%= @user.first_name %>
+</br>
+Last Name:
+<%= @user.last_name %>
+</br>
+Username:
+<%= @user.username %>
+</br>
+Email:
+<%= @user.email %>
+</br>
+
+</br>
+
+<% if @user.profile_pic? %>
+  <img src = "uploads/<%=@user.profile_pic%>">
+<% end %>
+
+
+<h2><a href = "/upload">upload</a></h2>
+
+<!-- js -->
+<script type="text/javascript" src="../../js/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>

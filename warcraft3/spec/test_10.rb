@@ -24,6 +24,10 @@ describe Unit do
       expect(enemy_unit).to receive(:damage).with(3)
       @unit.attack!(enemy_unit)
     end
+
+
+
+    
   end
 
 end

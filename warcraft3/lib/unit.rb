@@ -15,4 +15,11 @@ class Unit
     @health_points -= attack_power
   end
 
+  def dead?
+    if @health_points == 0
+      true
+    else
+      false
+    end
+  end
 end
